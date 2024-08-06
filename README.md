@@ -2,7 +2,7 @@
 1. First install Rosetta following this:
 
   ```
-  https://medium.com/@v.yavdoshenko/yet-another-way-to-improve-the-terminal-experience-for-developers-on-the-apple-silicon-ce87af9d6edf
+  https://github.com/rayotoo/rosetta-2-installation
    ```
    
 3. Set terminal to open in rosetta mode following this:
