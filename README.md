@@ -19,8 +19,6 @@ conda install -c bioconda lefse=1.0.8.post1
 ```
 
 
-
-
 # B. Installing-lefse-on-M1-MAC
 1. First install Rosetta following this:
 
@@ -44,3 +42,42 @@ conda install -c bioconda lefse=1.0.8.post1
   ```
   conda activate myenv 
   ```
+
+4. Installing Docker:
+Download Docker and Navigate to this directory and run these:
+   ```
+   sudo hdiutil attach Docker.dmg
+   ```
+   ```
+   sudo /Volumes/Docker/Docker.app/Contents/MacOS/install
+   ```
+   ```
+   sudo hdiutil detach /Volumes/Docker
+   ```
+
+5. Check to confirm that Docker is installed
+   ```
+   docker --version
+   ```
+   ```
+   docker info
+   ```
+   
+6. Link to download Debian Miniconda image (Python 2.7) with the bioBakery tool Lefse installed.
+   Image didn't seem to contain an installed lefse so this was installed.
+
+   Download the docker image to a directory of interest
+   ```
+   docker run -it biobakery/lefse bash
+   ```
+   to exit, use
+   ```
+   exit
+   ```
+   
+7. To run:
+   ```
+   docker run --platform linux/amd64 -it biobakery/lefse bash
+   ```
+
+   
